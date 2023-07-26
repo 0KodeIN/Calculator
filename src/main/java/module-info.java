@@ -1,4 +1,4 @@
-module com.example.CalculatorJFX {
+module com.example.Calculator {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
