@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.CalculateController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+  <TextArea fx:id="largeText" prefHeight="109.0" prefWidth="694.0" />
+   <AnchorPane prefHeight="241.0" prefWidth="560.0">
+      <children>
+         <ButtonBar layoutX="105.0" layoutY="14.0" prefHeight="40.0" prefWidth="200.0">
+           <buttons>
+             <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="1" />
+               <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="2" />
+               <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="3" />
+               <Button mnemonicParsing="false" text="+" onMouseClicked="#NumberClick"/>
+           </buttons>
+         </ButtonBar>
+         <ButtonBar layoutX="105.0" layoutY="54.0" prefHeight="40.0" prefWidth="200.0">
+            <buttons>
+               <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="4" />
+               <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="5" />
+               <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="6" />
+               <Button mnemonicParsing="false" text="-" onMouseClicked="#NumberClick"/>
+            </buttons>
+         </ButtonBar>
+         <ButtonBar layoutX="105.0" layoutY="94.0" prefHeight="40.0" prefWidth="200.0">
+            <buttons>
+               <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="7" />
+               <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="8" />
+               <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="9" />
+               <Button mnemonicParsing="false" text="*" onMouseClicked="#NumberClick"/>
+            </buttons>
+         </ButtonBar>
+         <ButtonBar layoutX="105.0" layoutY="134.0" prefHeight="40.0" prefWidth="200.0">
+            <buttons>
+               <Button mnemonicParsing="false" text="C" onMouseClicked="#SymbolClean"/>
+               <Button mnemonicParsing="false" onMouseClicked="#NumberClick" text="0" />
+               <Button mnemonicParsing="false" text="=" onMouseClicked="#SymbolEqual"/>
+               <Button mnemonicParsing="false" text="/" onMouseClicked="#NumberClick"/>
+            </buttons>
+         </ButtonBar>
+      </children>
+   </AnchorPane>
+
+</VBox>
